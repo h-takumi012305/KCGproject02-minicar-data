@@ -9,7 +9,7 @@ if ($environment === 'local') {
     'DB_NAME' => 'minicar-database',
     'DB_PORT' => '3306',
     'DB_USER' => 'root',
-    'DB_PASS' => '1234',
+    'DB_PASS' => '',
   ];
 } else {
   return [
