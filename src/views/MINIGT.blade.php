@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POPRACE</title>
+    <title>MINIGT</title>
 </head>
 <body>
-    <p><input type="image" src="./images/poprace-logo.jpg" /></p>
-    <h1>ポップレース</h1>
+    <p><input type="image" src="./images/minigt-logo.jpg" /></p>
+    <h1>ミニGT</h1>
     
     <h2><a href="../minicardata-base.html" >ミニカーデータベースへ戻る</a></h2>
 </body>
