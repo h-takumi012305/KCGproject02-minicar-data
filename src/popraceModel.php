@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
 class popraceModel
 {
     private PDO $pdo;
@@ -25,6 +29,7 @@ class popraceModel
 
     public function delete(int $ID): void
     {
+<<<<<<< HEAD
         $stmt = $this->pdo->prepare('DELETE FROM poprace WHERE ID = :ID');
         $stmt->execute([':ID' => $ID]);
     }
@@ -50,3 +55,16 @@ class popraceModel
     }
 }
 ?>
+=======
+        $stmt = $this->pdo->prepare('DELETE FROM inno WHERE ID = :ID');
+        $stmt->execute([':ID' => $ID]);
+    }
+
+    public function getAll(): array
+    {
+        $stmt = $this->pdo->query('SELECT * FROM inno ORDER BY DATE DESC');
+        return $stmt->fetchAll();
+    }
+}
+?>
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0

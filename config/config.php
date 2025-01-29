@@ -19,4 +19,8 @@ if ($environment === 'local') {
     'DB_USER' => '',
     'DB_PASS' => '',
   ];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0

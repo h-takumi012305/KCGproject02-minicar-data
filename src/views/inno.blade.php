@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inno64</title>
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
     <script>
         let deleteQueue = [];
 
@@ -47,6 +48,8 @@
             }
         }
     </script>
+=======
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
 </head>
 <body>
     <p><input type="image" src="./../images/inno-logo.png" /></p>
@@ -74,6 +77,7 @@
             <td>{{ $post['DATE'] }}</td>
             <td>{{ $post['Name'] }}</td>
             <td>{{ $post['have'] }}</td>
+<<<<<<< HEAD
             <td>
                 <button type="button" onclick="updateHave({{ $post['ID'] }}, 1)">+</button>
                 <button type="button" onclick="updateHave({{ $post['ID'] }}, -1)">-</button>
@@ -93,5 +97,10 @@
         <input type="number" name="have" placeholder="have" required>
         <button type="submit">Add</button>
     </form>
+=======
+        </tr>
+        @endforeach
+    </table>
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
 </body>
 </html>

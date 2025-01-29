@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
 class innoModel
 {
     private PDO $pdo;
@@ -26,6 +30,7 @@ class innoModel
         $stmt->execute([':ID' => $ID]);
     }
 
+<<<<<<< HEAD
     public function getAll(string $sort = 'DATE', string $search = ''): array
     {
         $allowedSorts = ['ID', 'itemID', 'DATE', 'Name', 'have'];
@@ -46,3 +51,12 @@ class innoModel
         ]);
     }
 }
+=======
+    public function getAll(): array
+    {
+        $stmt = $this->pdo->query('SELECT * FROM inno ORDER BY DATE DESC');
+        return $stmt->fetchAll();
+    }
+}
+?>
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0

@@ -28,20 +28,29 @@ class miniGTController
 
     private function handlePost(): void
     {
+<<<<<<< HEAD
         $this->miniGTModel->create($_POST['itemID'], $_POST['Name'], $_POST['Make'], $_POST['DATE'], $_POST['have']);
+=======
+        $this->innoModel->create($_POST['name'], $_POST['title'], $_POST['content']);
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
         header('Location: ' . $_SERVER['REQUEST_URI']);
         exit;
     }
 
     private function handleDelete(): void
     {
+<<<<<<< HEAD
         $this->miniGTModel->delete((int)$_POST['ID']);
+=======
+        $this->innoModel->delete($_POST['id']);
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
         header('Location: ' . $_SERVER['REQUEST_URI']);
         exit;
     }
 
     private function handleGet(): void
     {
+<<<<<<< HEAD
         $sort = $_GET['sort'] ?? 'DATE';
         $search = $_GET['search'] ?? '';
         $posts = $this->miniGTModel->getAll($sort, $search);
@@ -50,3 +59,10 @@ class miniGTController
     }
 }
 ?>
+=======
+        $posts = $this->innoModel->getAll();
+        echo $this->blade->run('index', ['posts' => $posts]);
+        exit;
+    }
+}
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0

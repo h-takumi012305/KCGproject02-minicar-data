@@ -41,13 +41,21 @@ class innoController
     }
 
     private function handleGet(): void
+<<<<<<< HEAD
     {   
         $sort = $_GET['sort'] ?? 'DATE'; // ソートパラメータを取得、デフォルトはDATE
         $search = $_GET['search'] ?? ''; // 検索パラメータを取得、デフォルトは空文字列
         $posts = $this->innoModel->getAll($sort, $search);
+=======
+    {
+        $posts = $this->innoModel->getAll();
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
         echo $this->blade->run('inno', ['posts' => $posts]);
         exit;
     }
 }
 ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0edf446da1fa2a51484dc3dd8cbe9a6d21e520a0
